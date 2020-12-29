@@ -17,6 +17,7 @@ jobs:
         unzip dafny.zip
         echo "/tmp/dafny" >> $GITHUB_PATH
         sudo apt-get install -y dotnet-runtime-5.0
+    - uses: actions/checkout@v2
     - name: Verify
       run: |
         cat test.dfy
